@@ -1,14 +1,12 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
-let info = `SC VIA GITHUB JNGN LUPA FOLLOW
-Atau Bisa Lewat Link Dibawah Ini :
-https://github.com/Kangsad01
+let info = `*Waduh Sc Private Bos!, Kalau Mau Minta Owner Aja*
 `.trim()
 
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*YANG FOLLOW DPT SKIN*', 'status@broadcast') 
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*Madhang:v*', 'status@broadcast') 
 }
-handler.help = ['github']
+handler.help = ['sc']
 handler.tags = ['info']
-handler.command = /^(github)$/i
+handler.command = /^(sc)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
