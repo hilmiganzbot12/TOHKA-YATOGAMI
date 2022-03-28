@@ -6,6 +6,7 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 let tags = {
     'main': 'Utama',
+    'rpg': 'Rpg Game',
     'game': 'Game',
     'xp': 'Exp & Limit',
     'nsfw': `NSFW ${global.opts['nsfw'] ? '' : '(Dinonaktifkan)'}`,
