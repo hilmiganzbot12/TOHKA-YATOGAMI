@@ -1,8 +1,8 @@
 let fs = require('fs')
 let chalk = require('chalk')
 
-global.wm = `◈ Tohka Yatogami` //UBAH JADI NAMAMU
-global.botwm = `◈ Iyann Ganteng` //UBAH JADI NAMAMU
+global.wm = `Tohka Yatogami` //UBAH JADI NAMAMU
+global.botwm = `Iyann Ganteng` //UBAH JADI NAMAMU
 
 global.name = 'Tohka Yatogami'// nama bot
 global.dev = `Iyann`// developer
@@ -79,7 +79,7 @@ global.packname = 'Tohka Yatogami'
 global.author = '◈ Tohka Yatogami'
 
 global.wait = '_*tunggu sedang di proses...*_'
-global.image = 'https://telegra.ph/file/b533ffdeea21febc3e0e8.jpg'
+global.image = 'https://telegra.ph/file/d88074b03269c745019e5.jpg'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=chrominium-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontname=nosifer&text='
 global.fla2 = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=inferno-logo&doScale=true&scaleWidth=800&scaleHigh=500&fontname=gemina&text='
 global.img = fs.readFileSync('./src/img2.jpg')
