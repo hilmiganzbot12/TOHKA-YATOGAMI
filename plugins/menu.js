@@ -6,7 +6,7 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 let tags = {
     'main': 'Utama',
-    'rpg': 'Rpg Game',
+    'rpg': 'Rpg Games',
     'game': 'Game',
     'xp': 'Exp & Limit',
     'nsfw': `NSFW ${global.opts['nsfw'] ? '' : '(Dinonaktifkan)'}`,
@@ -65,9 +65,6 @@ const defaultMenu = {
   body: '│• %cmd %islimit %isPremium',
   footer: '╰───\n',
   after: `
-  *📌Note:*
-  • 👑 (Premium)
-  • 🏷 (Limit)
 *%npmname@^%version*
 ${'```%npmdesc```'}
 `,
@@ -146,8 +143,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           ...help.filter(menu => menu.tags && menu.tags.includes(tag) && menu.help).map(menu => {
             return menu.help.map(help => {
               return body.replace(/%cmd/g, menu.prefix ? help : '%p' + help)
-                .replace(/%islimit/g, menu.limit ? '🏷' : '')
-                .replace(/%isPremium/g, menu.premium ? '👑' : '')
+                .replace(/%islimit/g, menu.limit ? '_(Limit)_' : '')
+                .replace(/%isPremium/g, menu.premium ? '_(Premium)_' : '')
                 .trim()
             }).join('\n')
           }),
@@ -173,8 +170,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3ButtonImg(m.chat, await (await fetch(image)).buffer(), `*Hi!, ${name}*`
-, text.trim(), 'OWNER BOT', `,.owner`, 'RULES BOT', '.rules', 'DONASI', '.donasi', m)
+    await conn.sendButtonImg(m.chat, await (await fetch(image)).buffer(), text.trim(), '© Tohka Yatogami', 'OWNER TOHKA', `,owner`, m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
