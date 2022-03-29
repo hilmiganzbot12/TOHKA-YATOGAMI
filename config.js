@@ -76,10 +76,10 @@ global.donate = `
 
 // Sticker WM
 global.packname = 'Tohka Yatogami'
-global.author = '◈ Tohka Yatogami'
+global.author = 'Iyann Ganteng'
 
 global.wait = '_*tunggu sedang di proses...*_'
-global.image = 'https://telegra.ph/file/d88074b03269c745019e5.jpg'
+global.image = 'https://telegra.ph/file/4dca7a6e8e0325b95ed0d.jpg'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=chrominium-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontname=nosifer&text='
 global.fla2 = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=inferno-logo&doScale=true&scaleWidth=800&scaleHigh=500&fontname=gemina&text='
 global.img = fs.readFileSync('./src/img2.jpg')
