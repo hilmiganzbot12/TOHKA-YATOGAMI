@@ -1,17 +1,17 @@
 let fs = require('fs')
 let chalk = require('chalk')
 
-global.wm = `Tohka Yatogami` //UBAH JADI NAMAMU
-global.botwm = `Iyann Ganteng` //UBAH JADI NAMAMU
+global.wm = `Black BotZ` //UBAH JADI NAMAMU
+global.botwm = `Black BotZ Official` //UBAH JADI NAMAMU
 
-global.name = 'Tohka Yatogami'// nama bot
-global.dev = `Iyann`// developer
+global.name = 'Black BotZ'// nama bot
+global.dev = `Black`// developer
 
 
 global.DeveloperMode = 'false' //true Or false
 global.linkGC = ['https://tinyurl.com/y7ummo5w']
 //kalo mau ubah nama owner nya ubah di ../plugins/creator.js
-global.owner = ['6285742344873'] // Letakan nomor kamu disini
+global.owner = ['18642108663','6282143349069'] // Letakan nomor kamu disini
 global.mods = ['0'] // Moderator?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
 global.APIs = { // API Prefix
@@ -63,22 +63,22 @@ global.ig = `https://instagram.com/the.sad.boy01` //UBAH JADI LINK IG LU
 //donasi
 global.donate = `
 ╭─「  Donasi • Pulsa 」
-├❒ tre [0857 4234 4873]
+├❒ Telkomsel [0821 4334 9069]
 ╰────
 
-╭─「  Donasi • Non Pulsa 」
-├❒ Dana & Ovo [0857 4234 4873]
+╭─「  Gopay & Dana 」
+├❒ Dana & Gopay [082143349069]
 ╰────
 
 ╭─「  Hubungi 」
-├❒ Ingin donasi? Wa.me/6285742344873
+├❒ Ingin donasi? Wa.me/18642108663
 ╰────
 
 *Join Grup : https://tinyurl.com/y7ummo5w*` //UBAH JADI NOMER MU
 
 // Sticker WM
-global.packname = 'Tohka Yatogami'
-global.author = 'Iyann Ganteng'
+global.packname = 'Black BotZ Official'
+global.author = 'Black BotZ'
 
 global.wait = '_*tunggu sedang di proses...*_'
 global.image = 'https://telegra.ph/file/4dca7a6e8e0325b95ed0d.jpg'
