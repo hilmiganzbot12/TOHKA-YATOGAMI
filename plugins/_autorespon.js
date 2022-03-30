@@ -56,7 +56,7 @@ handler.all = async function (m, { isBlocked }) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
         totaluser = Object.keys(db.data.users)
-        await this.setStatus(`Aktif selama ${uptime} │ Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} │ total user : ${totaluser.length} │ Tohka Yatogami`).catch(_ => _)
+        await this.setStatus(`ᴀᴋᴛɪꜰ ꜱᴇʟᴀᴍᴀ ${uptime} │ ᴍᴏᴅᴇ: ${global.opts['self'] ? 'ᴘʀɪᴠᴀᴛᴇ' : setting.groupOnly ? 'ʜᴀɴʏᴀ ɢʀᴜᴘ' : 'ᴘᴜʙʟɪᴋ'} │ ᴛᴏᴛᴀʟ ᴜꜱᴇʀ : ${totaluser.length} │ ᴛᴏʜᴋᴀ ʏᴀᴛᴏɢᴀᴍɪ`).catch(_ => _)
         setting.status = new Date() * 1
     }
 
