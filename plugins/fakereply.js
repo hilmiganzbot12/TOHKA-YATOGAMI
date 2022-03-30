@@ -12,8 +12,8 @@ key: {
 						"mimetype": "image/jpeg",
 						"jpegThumbnail": fs.readFileSync(`./src/profil.jpg`) //Gambarnye
 					},
-					"title": "tokonya bang", //Kasih namalu 
-					"description": "SELF BOT", 
+					"title": "Iyann Ganteng", //Kasih namalu 
+					"description": "TOHKA YATOGAMI", 
 					"currencyCode": "USD",
 					"priceAmount1000": "2000",
 					"retailerId": "Ghost",
