@@ -365,21 +365,21 @@ module.exports = {
           if (!('viewonce' in chat)) chat.viewonce = false
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
-          welcome: false,
-          detect: false,
+          welcome: true,
+          detect: true,
           sWelcome: '',
           sBye: '',
           sPromote: '',
           sDemote: '',
-          antiBadword: false,
+          antiBadword: true,
           descUpdate: true,
-          delete: false,
-          antiLink: false,
+          delete: true,
+          antiLink: true,
           download: false,
           expired: 0,
           getmsg: false,
           stiker: false,
-          viewonce: false,
+          viewonce: true,
         }
         let settings = global.db.data.settings[this.user.jid]
         if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {}
@@ -675,7 +675,7 @@ module.exports = {
             } finally {
               text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat datang, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
                 (chat.sBye || this.bye || conn.bye || 'Sampai jumpa, @user!')).replace(/@user/g, '@' + user.split`@`[0])
-              let img = await (await fetch('https://telegra.ph/file/f96eee5c2c75bd32c1f58.png')).buffer()
+              let img = await (await fetch('https://telegra.ph/file/4dca7a6e8e0325b95ed0d.jpg')).buffer()
 
               let wel = fs.readFileSync('./thumb/images (2).jpeg')
 
@@ -706,7 +706,7 @@ await conn.sendMessage(jid, { "contentText": text, "footerText": wm,
             "directPath": "/v/t62.7118-24/35150115_287008086621545_8250021012380583765_n.enc?ccb=11-4&oh=6f0f730e5224c054969c276a6276a920&oe=61A21F46",
             "mediaKeyTimestamp": "1634472176",
             "jpegThumbnail": action === 'add' ? wel : lea,
-  }}, 'buttonsMessage', { quoted: false, contextInfo: { mentionedJid: [user], forwardingScore: 999, isForwarded: true, externalAdReply: { title: wm, body: 'Zeus Botz V3', description: ' Recode By Pilar', mediaType: 2, thumbnail: img, mediaUrl: `https://youtu.be/Hp8Kw4--OyQ`}}})
+  }}, 'buttonsMessage', { quoted: false, contextInfo: { mentionedJid: [user], forwardingScore: 999, isForwarded: true, externalAdReply: { title: wm, body: 'Tohka Yatogami', description: ' By Iyan Ganteng', mediaType: 2, thumbnail: img, mediaUrl: `https://youtu.be/zsF4VVyxhxA`}}})
             }
           }
         }
