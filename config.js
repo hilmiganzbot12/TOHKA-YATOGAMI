@@ -9,7 +9,7 @@ global.dev = `Iyann`// developer
 
 
 global.DeveloperMode = 'false' //true Or false
-global.linkGC = ['https://chat.whatsapp.com/Lb4Emjih98rBiCZiZoS2eM', 'https://chat.whatsapp.com/CnQV9lNcHuIENb8SQ9CaYP']
+global.linkGC = ['https://tinyurl.com/y7ummo5w']
 //kalo mau ubah nama owner nya ubah di ../plugins/creator.js
 global.owner = ['6285742344873'] // Letakan nomor kamu disini
 global.mods = ['0'] // Moderator?
@@ -72,7 +72,9 @@ global.donate = `
 
 ╭─「  Hubungi 」
 ├❒ Ingin donasi? Wa.me/6285742344873
-╰────` //UBAH JADI NOMER MU
+╰────
+
+*Join Grup : https://tinyurl.com/y7ummo5w*` //UBAH JADI NOMER MU
 
 // Sticker WM
 global.packname = 'Tohka Yatogami'
